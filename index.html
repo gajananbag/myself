@@ -1018,10 +1018,15 @@ body, ul {
     .menu-icon {
         display: block;
     }
+
+    document.querySelector('.menu-icon').addEventListener('click', function () {
+    document.querySelector('.nav-list').classList.toggle('show');
+});
+
 }
 
         
-          float: center;
+          float: left;
           color: #ffffff;
           text-align: center;
           padding: 2px 17px;
@@ -1042,7 +1047,8 @@ body, ul {
         }
         </style>
        
-        
+       
+       
         
         <div class="topnav">
           <a class="active" href="#home">Home</a>
