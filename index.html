@@ -960,6 +960,66 @@
         }
         
         .topnav a {
+
+          /* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the navigation bar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the menu icon */
+.menu-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Style for the navigation list */
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+/* Style for each list item */
+.nav-list li {
+    margin: 0 15px;
+}
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px; /* Adjust as needed */
+        left: 0;
+        background-color: #333;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
         
           float: left;
           color: #ffffff;
