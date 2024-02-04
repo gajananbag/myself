@@ -953,21 +953,11 @@
         body {
          
           
-        
-        .topnav {
-          overflow: hidden;
-         
-        }
-        
-        .topnav a {
-
-          /* Reset some default styles */
-body, ul {
+        body {
     margin: 0;
-    padding: 0;
+    
 }
 
-/* Basic styling for the navigation bar */
 .navbar {
     background-color: #333;
     color: #fff;
@@ -977,34 +967,41 @@ body, ul {
     align-items: center;
 }
 
-/* Style for the menu icon */
 .menu-icon {
     font-size: 1.5em;
     cursor: pointer;
+    display: none; /* Hide the menu icon by default */
 }
 
-/* Style for the navigation list */
 .nav-list {
     list-style: none;
     display: flex;
 }
 
-/* Style for each list item */
 .nav-list li {
     margin: 0 15px;
 }
 
 /* Media query for mobile responsiveness */
 @media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block; /* Display the menu icon for mobile */
+    }
+
     .nav-list {
         display: none;
         flex-direction: column;
         width: 100%;
         text-align: center;
+        background-color: #333;
         position: absolute;
         top: 60px; /* Adjust as needed */
         left: 0;
-        background-color: #333;
     }
 
     .nav-list.show {
@@ -1014,62 +1011,34 @@ body, ul {
     .nav-list li {
         margin: 10px 0;
     }
-
-    .menu-icon {
-        display: block;
-    }
 }
 
-        
-          float: center;
-          color: #ffffff;
-          text-align: center;
-          padding: 2px 17px;
-          text-decoration: none;
-          color-interpolation-filters: auto;
-          border-radius: 8px;
-          
-        }
-        
-        .topnav a:hover {
-          background-color: #443e3e;
-          color: rgb(255, 254, 254);
-        }
-        
-        .topnav a.active {
-          background-color: #fcee30;
-          color: rgb(77, 70, 70);
-        }
-        </style>
-       
-        
-        
        <!DOCTYPE html>
-       <html lang="en">
-       <head>
-           <meta charset="UTF-8">
-           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-           <link rel="stylesheet" href="styles.css">
-           <title>Mobile Responsive Navigation Bar</title>
-       </head>
-       <body>
-       
-       <div class="navbar">
-           <div class="menu-icon">&#9776;</div>
-           <ul class="nav-list">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Contact</a></li>
-           </ul>
-       </div>
-       
-       <!-- Rest of your content goes here -->
-       
-       <script src="script.js"></script>
-       </body>
-       </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Centered Mobile Responsive Navigation Bar</title>
+</head>
+<body>
 
+<div class="navbar">
+    <div class="menu-icon">&#9776;</div>
+    <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Rest of your content goes here -->
+
+<script src="script.js"></script>
+</body>
+</html>
+ 
 
     </br>
     </br>
